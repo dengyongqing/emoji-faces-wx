@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link type="text/css" rel="stylesheet" href="./css/face.css">
+
+</head>
+<body>
+<div class="emoji-mod">
+    <textarea id="text" cols="30" rows="10"></textarea>
+    <button id="release">发 布</button>
+    <div id="text-show">
+
+    </div>
+    <div class="select-area ">
+        <ul id="emoji-box" class="swiper">
+
+        </ul>
+        <div id="position" class="swiper-pagination">
+            <span class="paginationItem active"></span>
+            <span class="paginationItem"></span>
+            <span class="paginationItem"></span>
+            <span class="paginationItem"></span>
+            <span class="paginationItem"></span>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="./dist/face.min.js"></script>
+<script type="text/javascript">
+  var face=new Face({
+        elemObj: document.getElementById('text'),
+        emojiBox: document.getElementById('emoji-box')
+    });
+  face.init();
+  document.getElementById('release').onclick=function () {
+      document.getElementById('text-show').innerHTML=face.compileFace(document.getElementById('text').value);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "emoji-face",
+  "version": "1.1.0",
+  "description": "emoji表情 qq 表情",
+  "main": "./dist/face.min.js",
+  "scripts": {
+    "test": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cydmi/face.git"
+  },
+  "keywords": [
+    "emoji",
+    "表情",
+    "qq",
+    "表情",
+    "emoji js表情",
+    "手机端表情"
+  ],
+  "bugs": {
+    "url": "https://github.com/Cydmi/face/issues"
+  },
+  "author": "render",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
